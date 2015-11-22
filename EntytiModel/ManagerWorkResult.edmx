@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ManagerWorkResult.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ManagerWorkResultStoreContainer">
+    <EntitySet Name="ManagerSet" EntityType="ManagerWorkResult.Store.ManagerSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WorkResultsSet" EntityType="ManagerWorkResult.Store.WorkResultsSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ManagerWorkResults" Association="ManagerWorkResult.Store.ManagerWorkResults">
+      <End Role="Manager" EntitySet="ManagerSet" />
+      <End Role="WorkResults" EntitySet="WorkResultsSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ManagerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkResultsSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Customer" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Product" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Summ" Type="int" Nullable="false" />
+    <Property Name="ManagerId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Manager_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ManagerWorkResults">
+    <End Role="Manager" Type="ManagerWorkResult.Store.ManagerSet" Multiplicity="1" />
+    <End Role="WorkResults" Type="ManagerWorkResult.Store.WorkResultsSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manager">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WorkResults">
+        <PropertyRef Name="Manager_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ManagerWorkResult" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ManagerWorkResultContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ManagerSet" EntityType="ManagerWorkResult.Manager" />
+          <EntitySet Name="WorkResultsSet" EntityType="ManagerWorkResult.WorkResults" />
+          <AssociationSet Name="ManagerWorkResults" Association="ManagerWorkResult.ManagerWorkResults">
+            <End Role="Manager" EntitySet="ManagerSet" />
+            <End Role="WorkResults" EntitySet="WorkResultsSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Manager">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="WorkResults" Relationship="ManagerWorkResult.ManagerWorkResults" FromRole="Manager" ToRole="WorkResults" />
+        </EntityType>
+        <EntityType Name="WorkResults">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Customer" Type="String" Nullable="false" />
+          <Property Name="Product" Type="String" Nullable="false" />
+          <Property Name="Summ" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Manager" Relationship="ManagerWorkResult.ManagerWorkResults" FromRole="WorkResults" ToRole="Manager" />
+          <Property Name="ManagerId" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="ManagerWorkResults">
+          <End Type="ManagerWorkResult.Manager" Role="Manager" Multiplicity="1" />
+          <End Type="ManagerWorkResult.WorkResults" Role="WorkResults" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ManagerWorkResultStoreContainer" CdmEntityContainer="ManagerWorkResultContainer">
+    <EntitySetMapping Name="ManagerSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ManagerWorkResult.Manager)">
+        <MappingFragment StoreEntitySet="ManagerSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkResultsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ManagerWorkResult.WorkResults)">
+        <MappingFragment StoreEntitySet="WorkResultsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Summ" ColumnName="Summ" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ManagerWorkResults" TypeName="ManagerWorkResult.ManagerWorkResults" StoreEntitySet="WorkResultsSet">
+      <EndProperty Name="Manager">
+        <ScalarProperty Name="Id" ColumnName="Manager_Id" />
+      </EndProperty>
+      <EndProperty Name="WorkResults">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
