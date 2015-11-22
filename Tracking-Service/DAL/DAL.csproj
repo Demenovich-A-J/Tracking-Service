@@ -39,8 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IModelRepository.cs" />
+    <Compile Include="ManagerRepository.cs" />
+    <Compile Include="ManagerWorkResultRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EntytiModel\EntytiModel.csproj">
+      <Project>{681aa7e8-c35d-4f98-bbfe-51bd8e1daad6}</Project>
+      <Name>EntytiModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
