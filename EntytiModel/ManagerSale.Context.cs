@@ -13,10 +13,10 @@ namespace EntytiModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ManagerWorkResultContainer : DbContext
+    public partial class ManagerSaleDBEntities : DbContext
     {
-        public ManagerWorkResultContainer()
-            : base("name=ManagerWorkResultContainer")
+        public ManagerSaleDBEntities()
+            : base("name=ManagerSaleDBEntities")
         {
         }
     
@@ -25,7 +25,9 @@ namespace EntytiModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Manager> ManagerSet { get; set; }
-        public virtual DbSet<WorkResults> WorkResultsSet { get; set; }
+        public virtual DbSet<CustomerSet> CustomerSet { get; set; }
+        public virtual DbSet<ManagerSet> ManagerSet { get; set; }
+        public virtual DbSet<ProductSet> ProductSet { get; set; }
+        public virtual DbSet<SaleSet> SaleSet { get; set; }
     }
 }

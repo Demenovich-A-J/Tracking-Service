@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ManagerSaleDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SaleSet" Relationship="Self.FK_CustomerSale" FromRole="CustomerSet" ToRole="SaleSet" />
+  </EntityType>
+  <EntityType Name="ManagerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <NavigationProperty Name="SaleSet" Relationship="Self.FK_ManagerSale" FromRole="ManagerSet" ToRole="SaleSet" />
+  </EntityType>
+  <EntityType Name="ProductSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SaleSet" Relationship="Self.FK_ProductSale" FromRole="ProductSet" ToRole="SaleSet" />
+  </EntityType>
+  <EntityType Name="SaleSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Summ" Type="Int32" Nullable="false" />
+    <Property Name="ManagerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerSet" Relationship="Self.FK_CustomerSale" FromRole="SaleSet" ToRole="CustomerSet" />
+    <NavigationProperty Name="ManagerSet" Relationship="Self.FK_ManagerSale" FromRole="SaleSet" ToRole="ManagerSet" />
+    <NavigationProperty Name="ProductSet" Relationship="Self.FK_ProductSale" FromRole="SaleSet" ToRole="ProductSet" />
+  </EntityType>
+  <Association Name="FK_CustomerSale">
+    <End Role="CustomerSet" Type="Self.CustomerSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManagerSale">
+    <End Role="ManagerSet" Type="Self.ManagerSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManagerSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSale">
+    <End Role="ProductSet" Type="Self.ProductSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ManagerSaleDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomerSet" EntityType="Self.CustomerSet" />
+    <EntitySet Name="ManagerSet" EntityType="Self.ManagerSet" />
+    <EntitySet Name="ProductSet" EntityType="Self.ProductSet" />
+    <EntitySet Name="SaleSet" EntityType="Self.SaleSet" />
+    <AssociationSet Name="FK_CustomerSale" Association="Self.FK_CustomerSale">
+      <End Role="CustomerSet" EntitySet="CustomerSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManagerSale" Association="Self.FK_ManagerSale">
+      <End Role="ManagerSet" EntitySet="ManagerSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSale" Association="Self.FK_ProductSale">
+      <End Role="ProductSet" EntitySet="ProductSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

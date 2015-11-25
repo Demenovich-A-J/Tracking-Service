@@ -50,37 +50,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manager.cs">
-      <DependentUpon>ManagerWorkResult.tt</DependentUpon>
+    <Compile Include="CustomerSet.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
-    <Compile Include="ManagerWorkResult.Context.cs">
+    <Compile Include="ManagerSale.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ManagerWorkResult.Context.tt</DependentUpon>
+      <DependentUpon>ManagerSale.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ManagerWorkResult.cs">
+    <Compile Include="ManagerSale.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ManagerWorkResult.tt</DependentUpon>
+      <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
-    <Compile Include="ManagerWorkResult.Designer.cs">
+    <Compile Include="ManagerSale.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ManagerWorkResult.edmx</DependentUpon>
+      <DependentUpon>ManagerSale.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSet.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSet.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkResults.cs">
-      <DependentUpon>ManagerWorkResult.tt</DependentUpon>
+    <Compile Include="SaleSet.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ManagerWorkResult.edmx">
+    <EntityDeploy Include="ManagerSale.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ManagerWorkResult.Designer.cs</LastGenOutput>
+      <LastGenOutput>ManagerSale.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ManagerWorkResult.edmx.diagram">
-      <DependentUpon>ManagerWorkResult.edmx</DependentUpon>
+    <None Include="ManagerSale.edmx.diagram">
+      <DependentUpon>ManagerSale.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -88,16 +94,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ManagerWorkResult.Context.tt">
+    <Content Include="ManagerSale.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ManagerWorkResult.Context.cs</LastGenOutput>
-      <DependentUpon>ManagerWorkResult.edmx</DependentUpon>
+      <DependentUpon>ManagerSale.edmx</DependentUpon>
+      <LastGenOutput>ManagerSale.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ManagerWorkResult.edmx.sql" />
-    <Content Include="ManagerWorkResult.tt">
+    <Content Include="ManagerSale.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ManagerWorkResult.cs</LastGenOutput>
-      <DependentUpon>ManagerWorkResult.edmx</DependentUpon>
+      <DependentUpon>ManagerSale.edmx</DependentUpon>
+      <LastGenOutput>ManagerSale.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

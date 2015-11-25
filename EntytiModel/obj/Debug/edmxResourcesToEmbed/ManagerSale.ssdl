@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ManagerSaleDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CustomerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ManagerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" StoreGeneratedPattern="None" />
+  </EntityType>
+  <EntityType Name="ProductSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Summ" Type="int" Nullable="false" />
+    <Property Name="ManagerId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CustomerSale">
+    <End Role="CustomerSet" Type="Self.CustomerSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManagerSale">
+    <End Role="ManagerSet" Type="Self.ManagerSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManagerSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSale">
+    <End Role="ProductSet" Type="Self.ProductSet" Multiplicity="1" />
+    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleSet">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ManagerSaleDBModelContainer">
+    <EntitySet Name="CustomerSet" EntityType="Self.CustomerSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ManagerSet" EntityType="Self.ManagerSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSet" EntityType="Self.ProductSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SaleSet" EntityType="Self.SaleSet" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CustomerSale" Association="Self.FK_CustomerSale">
+      <End Role="CustomerSet" EntitySet="CustomerSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManagerSale" Association="Self.FK_ManagerSale">
+      <End Role="ManagerSet" EntitySet="ManagerSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSale" Association="Self.FK_ProductSale">
+      <End Role="ProductSet" EntitySet="ProductSet" />
+      <End Role="SaleSet" EntitySet="SaleSet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

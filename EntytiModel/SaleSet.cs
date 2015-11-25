@@ -12,15 +12,17 @@ namespace EntytiModel
     using System;
     using System.Collections.Generic;
     
-    public partial class WorkResults
+    public partial class SaleSet
     {
         public int Id { get; set; }
         public System.DateTime Date { get; set; }
-        public string Customer { get; set; }
-        public string Product { get; set; }
+        public int CustomerId { get; set; }
+        public int ProductId { get; set; }
         public int Summ { get; set; }
-        public string ManagerId { get; set; }
+        public int ManagerId { get; set; }
     
-        public virtual Manager Manager { get; set; }
+        public virtual CustomerSet CustomerSet { get; set; }
+        public virtual ManagerSet ManagerSet { get; set; }
+        public virtual ProductSet ProductSet { get; set; }
     }
 }
