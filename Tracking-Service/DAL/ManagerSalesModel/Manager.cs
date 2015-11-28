@@ -1,6 +1,8 @@
-﻿namespace DAL.ManagerSalesModel
+﻿using System;
+
+namespace DAL.ManagerSalesModel
 {
-    public class Manager
+    public class Manager 
     {
         private readonly string _name;
         public Manager(string name)
@@ -11,6 +13,5 @@
         public string Name => _name;
 
         public int Id { get; set; }
-
     }
 }

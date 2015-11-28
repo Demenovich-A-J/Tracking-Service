@@ -1,6 +1,0 @@
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\bin\Debug\ManagerSalesClient.exe.config
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\bin\Debug\ManagerSalesClient.exe
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\bin\Debug\ManagerSalesClient.pdb
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\obj\Debug\ManagerSalesClient.csprojResolveAssemblyReference.cache
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\obj\Debug\ManagerSalesClient.exe
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSalesClient\obj\Debug\ManagerSalesClient.pdb

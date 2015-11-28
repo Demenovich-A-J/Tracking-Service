@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище ManagerSaleDBModelContainer" CdmEntityContainer="ManagerSaleDBEntities">
-    <EntitySetMapping Name="CustomerSet">
-      <EntityTypeMapping TypeName="ManagerSaleDBModel.CustomerSet">
-        <MappingFragment StoreEntitySet="CustomerSet">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="ManagerSaleDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ManagerSet">
-      <EntityTypeMapping TypeName="ManagerSaleDBModel.ManagerSet">
-        <MappingFragment StoreEntitySet="ManagerSet">
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="ManagerSaleDBModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="ManagerSaleDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductSet">
-      <EntityTypeMapping TypeName="ManagerSaleDBModel.ProductSet">
-        <MappingFragment StoreEntitySet="ProductSet">
+    <EntitySetMapping Name="Sale">
+      <EntityTypeMapping TypeName="ManagerSaleDBModel.Sale">
+        <MappingFragment StoreEntitySet="Sale">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="SaleSet">
-      <EntityTypeMapping TypeName="ManagerSaleDBModel.SaleSet">
-        <MappingFragment StoreEntitySet="SaleSet">
-          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
           <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="Summ" ColumnName="Summ" />
-          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -1,89 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Хранилище ManagerSaleDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="CustomerSet">
+  <EntityType Name="Customer">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="ManagerSet">
+  <EntityType Name="Manager">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <EntityType Name="ProductSet">
+  <EntityType Name="Product">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="SaleSet">
+  <EntityType Name="Sale">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManagerId" Type="int" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
     <Property Name="CustomerId" Type="int" Nullable="false" />
     <Property Name="ProductId" Type="int" Nullable="false" />
-    <Property Name="Summ" Type="int" Nullable="false" />
-    <Property Name="ManagerId" Type="int" Nullable="false" />
+    <Property Name="Summ" Type="float" Nullable="false" />
   </EntityType>
-  <Association Name="FK_CustomerSale">
-    <End Role="CustomerSet" Type="Self.CustomerSet" Multiplicity="1" />
-    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+  <Association Name="FK_Sale_Customers">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="CustomerSet">
+      <Principal Role="Customer">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="SaleSet">
+      <Dependent Role="Sale">
         <PropertyRef Name="CustomerId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_ManagerSale">
-    <End Role="ManagerSet" Type="Self.ManagerSet" Multiplicity="1" />
-    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+  <Association Name="FK_Sale_Managers">
+    <End Role="Manager" Type="Self.Manager" Multiplicity="1" />
+    <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="ManagerSet">
+      <Principal Role="Manager">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="SaleSet">
+      <Dependent Role="Sale">
         <PropertyRef Name="ManagerId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_ProductSale">
-    <End Role="ProductSet" Type="Self.ProductSet" Multiplicity="1" />
-    <End Role="SaleSet" Type="Self.SaleSet" Multiplicity="*" />
+  <Association Name="FK_Sale_Products">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="ProductSet">
+      <Principal Role="Product">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="SaleSet">
+      <Dependent Role="Sale">
         <PropertyRef Name="ProductId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="Хранилище ManagerSaleDBModelContainer">
-    <EntitySet Name="CustomerSet" EntityType="Self.CustomerSet" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ManagerSet" EntityType="Self.ManagerSet" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="ProductSet" EntityType="Self.ProductSet" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="SaleSet" EntityType="Self.SaleSet" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_CustomerSale" Association="Self.FK_CustomerSale">
-      <End Role="CustomerSet" EntitySet="CustomerSet" />
-      <End Role="SaleSet" EntitySet="SaleSet" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manager" EntityType="Self.Manager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sale" EntityType="Self.Sale" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Sale_Customers" Association="Self.FK_Sale_Customers">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Sale" EntitySet="Sale" />
     </AssociationSet>
-    <AssociationSet Name="FK_ManagerSale" Association="Self.FK_ManagerSale">
-      <End Role="ManagerSet" EntitySet="ManagerSet" />
-      <End Role="SaleSet" EntitySet="SaleSet" />
+    <AssociationSet Name="FK_Sale_Managers" Association="Self.FK_Sale_Managers">
+      <End Role="Manager" EntitySet="Manager" />
+      <End Role="Sale" EntitySet="Sale" />
     </AssociationSet>
-    <AssociationSet Name="FK_ProductSale" Association="Self.FK_ProductSale">
-      <End Role="ProductSet" EntitySet="ProductSet" />
-      <End Role="SaleSet" EntitySet="SaleSet" />
+    <AssociationSet Name="FK_Sale_Products" Association="Self.FK_Sale_Products">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Sale" EntitySet="Sale" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

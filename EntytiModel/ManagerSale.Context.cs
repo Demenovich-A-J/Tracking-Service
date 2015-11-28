@@ -25,9 +25,9 @@ namespace EntytiModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Customer> CustomerSet { get; set; }
-        public virtual DbSet<Manager> ManagerSet { get; set; }
-        public virtual DbSet<Product> ProductSet { get; set; }
-        public virtual DbSet<Sale> SaleSet { get; set; }
+        public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<Manager> Manager { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Sale> Sale { get; set; }
     }
 }

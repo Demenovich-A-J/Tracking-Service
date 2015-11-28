@@ -47,12 +47,13 @@ namespace DAL.ReposytoryModel.AbstractClasses
             {
                 item = context
                     .Set<K>()
-                    .AsNoTracking()
                     .Select(EntityToObject)
                     .FirstOrDefault(where);
             }
             return item;
         }
+
+        public abstract T GetSingle(T item);
 
         public virtual void Add(T item)
         {

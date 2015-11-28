@@ -2,13 +2,13 @@
 {
     public class Customer
     {
-        private readonly string _name;
-        public Customer(string name)
+        private readonly string _lastName;
+        public Customer(string lastName)
         {
-            _name = name;
+            _lastName = lastName;
         }
 
-        public string Name => _name;
+        public string LastName => _lastName;
 
         public int Id { get; set; }
     }

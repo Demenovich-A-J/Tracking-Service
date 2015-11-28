@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="03cb96305b454ee89817cd2274b8f7b1" Name="Diagram1">
+      <Diagram DiagramId="8dded3a73734426b8ec639a0c6103d50" Name="Diagram1">
         <EntityTypeShape EntityType="ManagerSaleDBModel.Customer" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ManagerSaleDBModel.Manager" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ManagerSaleDBModel.Product" Width="1.5" PointX="3.375" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ManagerSaleDBModel.Product" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="ManagerSaleDBModel.Sale" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="ManagerSaleDBModel.FK_CustomerSale" ManuallyRouted="false" />
-        <AssociationConnector Association="ManagerSaleDBModel.FK_ManagerSale" ManuallyRouted="false" />
-        <AssociationConnector Association="ManagerSaleDBModel.FK_ProductSale" ManuallyRouted="false" />
+        <AssociationConnector Association="ManagerSaleDBModel.FK_Sale_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ManagerSaleDBModel.FK_Sale_Managers" ManuallyRouted="false" />
+        <AssociationConnector Association="ManagerSaleDBModel.FK_Sale_Products" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

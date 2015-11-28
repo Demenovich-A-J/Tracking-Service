@@ -1,6 +1,9 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Transactions;
+using BL.Parser.Interfaces;
+using BL.Reader.Interfaces;
 using DAL.ManagerSalesModel;
 using DAL.ReposytoryModel;
 using DAL.ReposytoryModel.Interfaces;
@@ -60,7 +63,7 @@ namespace BL
 
             lock (repository)
             {
-                resulIitem = repository.GetSingle(x => x == item);
+                resulIitem = repository.GetSingle(item);
             }
 
             if (resulIitem != null) return resulIitem;
@@ -68,9 +71,9 @@ namespace BL
             lock (repository)
             {
                 repository.Add(item);
-            }
 
-            return item;
+                return repository.GetSingle(item);
+            }
         }
     }
 }

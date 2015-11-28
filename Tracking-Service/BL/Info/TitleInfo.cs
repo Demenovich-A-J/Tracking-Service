@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BL
+namespace BL.Info
 {
     public class TitleInfo
     {

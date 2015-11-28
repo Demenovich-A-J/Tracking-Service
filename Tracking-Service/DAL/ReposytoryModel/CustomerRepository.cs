@@ -1,5 +1,7 @@
-﻿using DAL.ManagerSalesModel;
+﻿using System.Linq;
 using DAL.ReposytoryModel.AbstractClasses;
+using EntytiModel;
+using Customer = DAL.ManagerSalesModel.Customer;
 
 namespace DAL.ReposytoryModel
 {
@@ -7,12 +9,31 @@ namespace DAL.ReposytoryModel
     {
         protected override EntytiModel.Customer ObjectToEntity(ManagerSalesModel.Customer item)
         {
-            throw new System.NotImplementedException();
+            return new EntytiModel.Customer()
+            {
+                Name = item.LastName
+            };
         }
 
         protected override ManagerSalesModel.Customer EntityToObject(EntytiModel.Customer item)
         {
-            throw new System.NotImplementedException();
+            return new ManagerSalesModel.Customer(item.Name)
+            {
+                Id = item.Id
+            };
+        }
+
+        public override Customer GetSingle(Customer item)
+        {
+            Customer resItem;
+            using (var context = new ManagerSaleDBEntities())
+            {
+                resItem = context
+                    .Set<EntytiModel.Customer>()
+                    .Select(EntityToObject)
+                    .FirstOrDefault(x => x.LastName == item.LastName);
+            }
+            return resItem;
         }
     }
 }

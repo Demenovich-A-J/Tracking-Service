@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BL
+namespace BL.Reader.Interfaces
 {
     public interface IReader
     {

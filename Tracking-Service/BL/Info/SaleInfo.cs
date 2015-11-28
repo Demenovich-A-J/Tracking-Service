@@ -1,7 +1,6 @@
 ﻿using System;
-using DAL.ManagerSalesModel;
 
-namespace BL
+namespace BL.Info
 {
     public class SaleInfo
     {

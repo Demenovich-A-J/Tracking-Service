@@ -1,4 +1,6 @@
-﻿namespace BL
+﻿using BL.Info;
+
+namespace BL.Parser.Interfaces
 {
     public interface IParser
     {

@@ -2,64 +2,22 @@
 using System.Linq;
 using DAL.ReposytoryModel.AbstractClasses;
 using EntytiModel;
+using Product = DAL.ManagerSalesModel.Product;
+using Sale = DAL.ManagerSalesModel.Sale;
 
 namespace DAL.ReposytoryModel
 {
     public class SaleRepository : GenericDataRepitory<ManagerSalesModel.Sale, EntytiModel.Sale>
     {
-        public override void Add(ManagerSalesModel.Sale item)
-        {
-            using (var context = new ManagerSaleDBEntities())
-            {
-                var manager = context.ManagerSet.FirstOrDefault(x => x.Name == item.Manager.Name);
-                var product = context.ProductSet.AsNoTracking().FirstOrDefault(x => x.Name == item.Product.Name);
-                var customer = context.CustomerSet.AsNoTracking().FirstOrDefault(x => x.Name == item.Customer.Name);
-                var newSale = new EntytiModel.Sale
-                {
-                    Summ = item.Summ,
-                    Date = item.Date,
-                };
-
-                if (manager == null)
-                {
-                    newSale.ManagerSet = new EntytiModel.Manager { Name = item.Manager.Name};
-                }
-                else
-                {
-                    newSale.ManagerId = manager.Id;
-                }
-                if (product == null)
-                {
-                    newSale.ProductSet = new EntytiModel.Product { Name = item.Product.Name };
-                }
-                else
-                {
-                    newSale.ProductId = product.Id;
-                }
-                if (customer == null)
-                {
-                    newSale.CustomerSet = new EntytiModel.Customer { Name = item.Customer.Name };
-                }
-                else
-                {
-                    newSale.CustomerId = customer.Id;
-                }
-
-                context.Entry(newSale).State = EntityState.Added;
-                context.SaveChanges();
-            }
-            base.Add(item);
-        }
-
         protected override EntytiModel.Sale ObjectToEntity(ManagerSalesModel.Sale item)
         {
             return new EntytiModel.Sale
             {
                 Summ = item.Summ,
                 Date = item.Date,
-                CustomerSet = new EntytiModel.Customer { Name = item.Customer.Name },
-                ManagerSet = new EntytiModel.Manager{ Name = item.Customer.Name },
-                ProductSet = new EntytiModel.Product{ Name = item.Product.Name }
+                CustomerId = item.CustomerId,
+                ManagerId = item.ManagerId,
+                ProductId = item.ProductId,
             };
         }
 
@@ -69,10 +27,26 @@ namespace DAL.ReposytoryModel
             {
                 Summ = item.Summ,
                 Date = item.Date,
-                Customer = new ManagerSalesModel.Customer(item.CustomerSet.Name),
-                Manager = new ManagerSalesModel.Manager(item.ManagerSet.Name),
-                Product = new ManagerSalesModel.Product(item.ProductSet.Name)
+                CustomerId = item.CustomerId,
+                ManagerId = item.ManagerId,
+                ProductId = item.ProductId,
+                Customer = new ManagerSalesModel.Customer(item.Customer.Name),
+                Manager = new ManagerSalesModel.Manager(item.Manager.LastName),
+                Product = new ManagerSalesModel.Product(item.Product.Name)
             };
+        }
+
+        public override Sale GetSingle(Sale item)
+        {
+            Sale resItem;
+            using (var context = new ManagerSaleDBEntities())
+            {
+                resItem = context
+                    .Set<EntytiModel.Sale>()
+                    .Select(EntityToObject)
+                    .FirstOrDefault(x => x.Manager == item.Manager);
+            }
+            return resItem;
         }
     }
 }

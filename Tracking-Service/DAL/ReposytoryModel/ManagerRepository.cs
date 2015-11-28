@@ -1,4 +1,9 @@
-﻿using DAL.ReposytoryModel.AbstractClasses;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using DAL.ReposytoryModel.AbstractClasses;
+using EntytiModel;
+using Manager = DAL.ManagerSalesModel.Manager;
 
 namespace DAL.ReposytoryModel
 {
@@ -8,13 +13,29 @@ namespace DAL.ReposytoryModel
         {
             return new EntytiModel.Manager
             {
-                Name = item.Name
+                LastName = item.Name
             };
         }
 
         protected override ManagerSalesModel.Manager EntityToObject(EntytiModel.Manager item)
         {
-            return new ManagerSalesModel.Manager(item.Name);
+            return new ManagerSalesModel.Manager(item.LastName)
+            {
+                Id = item.Id
+            };
+        }
+
+        public override Manager GetSingle(Manager item1)
+        {
+            Manager item;
+            using (var context = new ManagerSaleDBEntities())
+            {
+                item = context
+                    .Set<EntytiModel.Manager>()
+                    .Select(EntityToObject)
+                    .FirstOrDefault(x => x.Name == item1.Name);
+            }
+            return item;
         }
     }
 }
