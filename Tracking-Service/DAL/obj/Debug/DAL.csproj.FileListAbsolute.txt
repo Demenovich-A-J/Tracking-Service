@@ -11,3 +11,4 @@ D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\ru\EntityF
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.dll
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.pdb
+D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

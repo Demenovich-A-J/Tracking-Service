@@ -1,9 +1,6 @@
-﻿using DAL.ManagerSalesModel;
-using EntytiModel;
-
-namespace DAL.ReposytoryModel.Interfaces
+﻿namespace DAL.ReposytoryModel.Interfaces
 {
-    public interface IProductRepository : IGenericDataRepository<Product>
+    public interface IProductRepository : IGenericDataRepository<ManagerSalesModel.Product>
     {
          
     }

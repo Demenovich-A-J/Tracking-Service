@@ -1,17 +1,15 @@
-﻿using DAL.ManagerSalesModel;
-using DAL.ReposytoryModel.AbstractClasses;
-using EntytiModel;
+﻿using DAL.ReposytoryModel.AbstractClasses;
 
 namespace DAL.ReposytoryModel
 {
-    public class ProductRepository : GenericDataRepitory<Product, ProductSet>
+    public class ProductRepository : GenericDataRepitory<ManagerSalesModel.Product, EntytiModel.Product>
     {
-        protected override ProductSet ObjectToEntity(Product item)
+        protected override EntytiModel.Product ObjectToEntity(ManagerSalesModel.Product item)
         {
             throw new System.NotImplementedException();
         }
 
-        protected override Product EntityToObject(ProductSet item)
+        protected override ManagerSalesModel.Product EntityToObject(EntytiModel.Product item)
         {
             throw new System.NotImplementedException();
         }

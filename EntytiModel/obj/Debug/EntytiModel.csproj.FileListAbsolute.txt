@@ -8,4 +8,4 @@ D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Debug\EntityFramework.Sql
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.dll
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.pdb
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.resources.dll
-D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.csprojResolveAssemblyReference.cache
+D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

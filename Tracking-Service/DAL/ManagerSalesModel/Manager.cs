@@ -2,12 +2,15 @@
 {
     public class Manager
     {
+        private readonly string _name;
         public Manager(string name)
         {
-            Name = name;
+            _name = name;
         }
 
-        public string Name { get; set; }
-         
+        public string Name => _name;
+
+        public int Id { get; set; }
+
     }
 }

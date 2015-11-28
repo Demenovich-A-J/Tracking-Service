@@ -1,15 +1,1 @@
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\BL.exe.config
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\BL.exe
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\BL.pdb
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\DAL.dll
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntytiModel.dll
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntityFramework.dll
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\DAL.pdb
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntytiModel.pdb
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntityFramework.xml
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\ru\EntityFramework.resources.dll
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\obj\Debug\BL.exe
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\obj\Debug\BL.pdb
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntityFramework.SqlServer.dll
-D:\SourceTreeProjects\Tracking-Service\Tracking-Service\BL\bin\Debug\EntityFramework.SqlServer.xml

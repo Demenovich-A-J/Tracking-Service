@@ -16,30 +16,26 @@ namespace DAL.ReposytoryModel.AbstractClasses
 
         protected abstract T EntityToObject(K item);
 
-        public virtual IList<T> GetAll()
+        public virtual IEnumerable<T> GetAll()
         {
-            List<T> list;
+            IEnumerable<T> list;
             using (var context = new ManagerSaleDBEntities())
             {
                 list = context
                     .Set<K>()
                     .AsNoTracking()
-                    .Select(x => EntityToObject(x))
+                    .Select(EntityToObject)
                     .ToList();
             }
             return list;
         }
 
-        public virtual IList<T> GetList(Func<T, bool> where)
+        public virtual IEnumerable<T> GetList(Func<T, bool> where)
         {
-            List<T> list;
+            IEnumerable<T> list;
             using (var context = new ManagerSaleDBEntities())
             {
-                list = context
-                    .Set<K>()
-                    .AsNoTracking()
-                    .Select(x => EntityToObject(x))
-                    .ToList();
+                list = context.Set<K>().AsNoTracking().Select(EntityToObject).Where(where).ToList();
             }
             return list;
         }
@@ -50,10 +46,10 @@ namespace DAL.ReposytoryModel.AbstractClasses
             using (var context = new ManagerSaleDBEntities())
             {
                 item = context
-                .Set<K>()
-                .AsNoTracking()
-                .Select(x => EntityToObject(x))
-                .FirstOrDefault(where);
+                    .Set<K>()
+                    .AsNoTracking()
+                    .Select(EntityToObject)
+                    .FirstOrDefault(where);
             }
             return item;
         }

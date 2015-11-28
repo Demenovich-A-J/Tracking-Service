@@ -1,19 +1,20 @@
-﻿using DAL.ManagerSalesModel;
-using DAL.ReposytoryModel.AbstractClasses;
-using EntytiModel;
+﻿using DAL.ReposytoryModel.AbstractClasses;
 
 namespace DAL.ReposytoryModel
 {
-    public class ManagerRepository : GenericDataRepitory<Manager,ManagerSet>
+    public class ManagerRepository : GenericDataRepitory<ManagerSalesModel.Manager,EntytiModel.Manager>
     {
-        protected override ManagerSet ObjectToEntity(Manager item)
+        protected override EntytiModel.Manager ObjectToEntity(ManagerSalesModel.Manager item)
         {
-            throw new System.NotImplementedException();
+            return new EntytiModel.Manager
+            {
+                Name = item.Name
+            };
         }
 
-        protected override Manager EntityToObject(ManagerSet item)
+        protected override ManagerSalesModel.Manager EntityToObject(EntytiModel.Manager item)
         {
-            throw new System.NotImplementedException();
+            return new ManagerSalesModel.Manager(item.Name);
         }
     }
 }

@@ -1,17 +1,16 @@
 ﻿using DAL.ManagerSalesModel;
 using DAL.ReposytoryModel.AbstractClasses;
-using EntytiModel;
 
 namespace DAL.ReposytoryModel
 {
-    public class CustomerRepository : GenericDataRepitory<Customer,CustomerSet>
+    public class CustomerRepository : GenericDataRepitory<ManagerSalesModel.Customer, EntytiModel.Customer>
     {
-        protected override CustomerSet ObjectToEntity(Customer item)
+        protected override EntytiModel.Customer ObjectToEntity(ManagerSalesModel.Customer item)
         {
             throw new System.NotImplementedException();
         }
 
-        protected override Customer EntityToObject(CustomerSet item)
+        protected override ManagerSalesModel.Customer EntityToObject(EntytiModel.Customer item)
         {
             throw new System.NotImplementedException();
         }
