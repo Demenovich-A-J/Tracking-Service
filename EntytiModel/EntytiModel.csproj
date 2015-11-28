@@ -50,7 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerSet.cs">
+    <Compile Include="Customer.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
       <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
     <Compile Include="ManagerSale.Context.cs">
@@ -68,14 +71,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ManagerSale.edmx</DependentUpon>
     </Compile>
-    <Compile Include="ManagerSet.cs">
-      <DependentUpon>ManagerSale.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductSet.cs">
+    <Compile Include="Product.cs">
       <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleSet.cs">
+    <Compile Include="Sale.cs">
       <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
   </ItemGroup>
