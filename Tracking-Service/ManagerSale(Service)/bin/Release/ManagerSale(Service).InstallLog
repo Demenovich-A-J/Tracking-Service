@@ -1,0 +1,240 @@
+﻿Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Попытка останова службы ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Предупреждение. Источник ManagerSalesService не зарегистрирован на локальном компьютере.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется откат для сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Восстанавливается исходное состояние журнала событий для источника ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Попытка останова службы ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Попытка останова службы ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Попытка останова службы ManagerSalesService.
+Выполняется установка сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog
+   assemblypath = D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe

@@ -26,7 +26,7 @@ namespace BL.Parser
 
         public TitleInfo ParseTitle(string title)
         {
-            if (!_titleInfoRegex.IsMatch(title)) throw new FormatException("File has wrong name format;");
+            if (!_titleInfoRegex.IsMatch(title)) throw new FormatException($"File name '{title}' has wrong name format;");
 
             var match = _titleInfoRegex.Match(title);
 

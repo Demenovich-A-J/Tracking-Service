@@ -1,0 +1,1 @@
+D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Release\ManagerSale(Console).exe.config

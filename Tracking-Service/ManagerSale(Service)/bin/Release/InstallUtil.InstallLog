@@ -1,0 +1,266 @@
+﻿
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.InvalidOperationException: Пользователь отменил установку служб в исполняемом файле D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба уже существует
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Имя учетной записи задано неверно или не существует, или же неверен указанный пароль
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Имя учетной записи задано неверно или не существует, или же неверен указанный пароль
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Имя учетной записи задано неверно или не существует, или же неверен указанный пароль
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба была отмечена для удаления
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба была отмечена для удаления
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+
+Начинается установка.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Удаление из системы выполнено.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).exe.
+Данный файл находится в D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Release\ManagerSale(Service).InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.

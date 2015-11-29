@@ -1,15 +1,16 @@
-﻿using System.Data.Entity;
-using System.Linq;
+﻿using System.Linq;
 using DAL.ReposytoryModel.AbstractClasses;
 using EntytiModel;
+using Customer = DAL.ManagerSalesModel.Customer;
+using Manager = DAL.ManagerSalesModel.Manager;
 using Product = DAL.ManagerSalesModel.Product;
 using Sale = DAL.ManagerSalesModel.Sale;
 
 namespace DAL.ReposytoryModel
 {
-    public class SaleRepository : GenericDataRepitory<ManagerSalesModel.Sale, EntytiModel.Sale>
+    public class SaleRepository : GenericDataRepitory<Sale, EntytiModel.Sale>
     {
-        protected override EntytiModel.Sale ObjectToEntity(ManagerSalesModel.Sale item)
+        protected override EntytiModel.Sale ObjectToEntity(Sale item)
         {
             return new EntytiModel.Sale
             {
@@ -17,22 +18,22 @@ namespace DAL.ReposytoryModel
                 Date = item.Date,
                 CustomerId = item.CustomerId,
                 ManagerId = item.ManagerId,
-                ProductId = item.ProductId,
+                ProductId = item.ProductId
             };
         }
 
-        protected override ManagerSalesModel.Sale EntityToObject(EntytiModel.Sale item)
+        protected override Sale EntityToObject(EntytiModel.Sale item)
         {
-            return new ManagerSalesModel.Sale
+            return new Sale
             {
                 Summ = item.Summ,
                 Date = item.Date,
                 CustomerId = item.CustomerId,
                 ManagerId = item.ManagerId,
                 ProductId = item.ProductId,
-                Customer = new ManagerSalesModel.Customer(item.Customer.Name),
-                Manager = new ManagerSalesModel.Manager(item.Manager.LastName),
-                Product = new ManagerSalesModel.Product(item.Product.Name)
+                Customer = new Customer(item.Customer.Name),
+                Manager = new Manager(item.Manager.LastName),
+                Product = new Product(item.Product.Name)
             };
         }
 

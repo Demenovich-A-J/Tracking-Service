@@ -53,6 +53,9 @@
     <Compile Include="Customer.cs">
       <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>
+    <Compile Include="DocumentInfo.cs">
+      <DependentUpon>ManagerSale.tt</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs">
       <DependentUpon>ManagerSale.tt</DependentUpon>
     </Compile>

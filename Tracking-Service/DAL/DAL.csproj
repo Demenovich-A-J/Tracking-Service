@@ -49,12 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManagerSalesModel\Customer.cs" />
+    <Compile Include="ManagerSalesModel\DocumentInfo.cs" />
+    <Compile Include="ManagerSalesModel\DocumentInfoStatus.cs" />
     <Compile Include="ManagerSalesModel\Manager.cs" />
     <Compile Include="ManagerSalesModel\Product.cs" />
     <Compile Include="ManagerSalesModel\Sale.cs" />
     <Compile Include="ReposytoryModel\AbstractClasses\GenericDataRepitory.cs" />
     <Compile Include="ReposytoryModel\CustomerRepository.cs" />
+    <Compile Include="ReposytoryModel\DocumentInfoRepository.cs" />
     <Compile Include="ReposytoryModel\Interfaces\ICustomerRepository.cs" />
+    <Compile Include="ReposytoryModel\Interfaces\IDocumentInfoRepository.cs" />
     <Compile Include="ReposytoryModel\Interfaces\IManagerRepository.cs" />
     <Compile Include="ReposytoryModel\Interfaces\IGenericDataRepository.cs" />
     <Compile Include="ReposytoryModel\Interfaces\IProductRepository.cs" />

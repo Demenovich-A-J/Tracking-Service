@@ -78,12 +78,20 @@ namespace DAL.ReposytoryModel.AbstractClasses
 
         public virtual void Remove(T item)
         {
-            throw new NotImplementedException();
+            using (var context = new ManagerSaleDBEntities())
+            {
+                context.Entry(item).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
         }
 
         public virtual void Update(T item)
         {
-            throw new NotImplementedException();
+            using (var context = new ManagerSaleDBEntities())
+            {
+                context.Entry(item).State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

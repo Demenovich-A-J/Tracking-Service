@@ -16,3 +16,5 @@ D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\obj
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Debug\EntityFramework.SqlServer.dll
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Debug\EntityFramework.SqlServer.xml
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Debug\log4net.dll
+D:\SourceTreeProjects\Tracking-Service\Tracking-Service\ManagerSale(Console)\bin\Debug\log4net.xml

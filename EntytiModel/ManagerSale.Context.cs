@@ -29,5 +29,6 @@ namespace EntytiModel
         public virtual DbSet<Manager> Manager { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Sale> Sale { get; set; }
+        public virtual DbSet<DocumentInfo> DocumentInfo { get; set; }
     }
 }
