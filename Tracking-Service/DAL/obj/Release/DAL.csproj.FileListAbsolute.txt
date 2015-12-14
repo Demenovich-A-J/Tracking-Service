@@ -12,3 +12,17 @@ D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\ru\Entit
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.dll
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.pdb
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\DAL.dll.config
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\DAL.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\DAL.pdb
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntityFramework.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntityFramework.SqlServer.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntytiModel.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntityFramework.xml
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\EntityFramework.SqlServer.xml
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\ru\EntityFramework.resources.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Release\DAL.pdb

@@ -1,0 +1,34 @@
+﻿Выполняется установка сборки 'E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).InstallLog
+   assemblypath = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).InstallLog
+   assemblypath = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe
+Выполняется удаление сборки 'E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).InstallLog
+   assemblypath = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe
+Выполняется удаление источника EventLog ManagerSalesService.
+Выполняется удаление службы ManagerSalesService из системы...
+Служба ManagerSalesService успешно удалена из системы.
+Выполняется установка сборки 'E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).InstallLog
+   assemblypath = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe
+Устанавливается служба ManagerSalesService...
+Служба ManagerSalesService успешно установлена.
+Создается исходный EventLog ManagerSalesService в журнале Application...
+Выполняется фиксация сборки 'E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).InstallLog
+   assemblypath = E:\GitProjects\Tracking-Service\Tracking-Service\ManagerSale(Service)\bin\Debug\ManagerSale(Service).exe

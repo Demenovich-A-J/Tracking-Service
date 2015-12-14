@@ -9,3 +9,15 @@ D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Release\ru\EntityFramewor
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Release\ru\EntityFramework.SqlServer.resources.dll
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Release\EntytiModel.dll
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Release\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntytiModel.dll.config
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntytiModel.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntityFramework.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntityFramework.SqlServer.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntityFramework.xml
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\EntityFramework.SqlServer.xml
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\ru\EntityFramework.resources.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+E:\GitProjects\Tracking-Service\EntytiModel\obj\Release\EntytiModel.dll
+E:\GitProjects\Tracking-Service\EntytiModel\obj\Release\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\EntytiModel\obj\Release\EntytiModel.csprojResolveAssemblyReference.cache

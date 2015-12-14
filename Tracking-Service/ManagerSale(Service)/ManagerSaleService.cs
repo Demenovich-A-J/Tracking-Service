@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.ServiceProcess;
-using System.Text;
 using System.Threading.Tasks;
 using BL;
 using BL.Parser;
@@ -15,6 +11,7 @@ using BL.Reader;
 using BL.Scheduler;
 using BL.SettingUpEnvironment;
 using log4net;
+using log4net.Config;
 
 namespace ManagerSale_Service_
 {
@@ -27,10 +24,11 @@ namespace ManagerSale_Service_
         private static string _processedFiles;
         private static int _maxNummberOfConnections;
         private static ILog _logger;
+
         public ManagerSaleService()
         {
             InitializeComponent();
-            log4net.Config.XmlConfigurator.Configure();
+            XmlConfigurator.Configure();
             _logger = LogManager.GetLogger("Manager Sale Service");
         }
 
@@ -53,7 +51,6 @@ namespace ManagerSale_Service_
                 });
 
                 _taskFactory = new TaskFactory(new ManagerTasksScheduler(_maxNummberOfConnections));
-
             }
             catch (ArgumentNullException ex)
             {
@@ -81,7 +78,9 @@ namespace ManagerSale_Service_
         private static void ScanFolder()
         {
             var files = Directory.GetFiles(_serverFolderPath);
-            foreach (var fileName in files.Select(file => file.Substring(file.LastIndexOf("\\", StringComparison.Ordinal) + 1)))
+            foreach (
+                var fileName in
+                    files.Select(file => file.Substring(file.LastIndexOf("\\", StringComparison.Ordinal) + 1)))
             {
                 WatcherOnCreated(null, new FileSystemEventArgs(WatcherChangeTypes.Created, _serverFolderPath, fileName));
             }
@@ -97,26 +96,30 @@ namespace ManagerSale_Service_
 
                     _fileHandler.ProcessFile(_serverFolderPath, fileSystemEventArgs.Name);
 
-                    File.Copy(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name), Path.Combine(_processedFiles, fileSystemEventArgs.Name), true);
+                    File.Copy(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name),
+                        Path.Combine(_processedFiles, fileSystemEventArgs.Name), true);
                     File.Delete(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name));
 
                     _logger.Info($"File {fileSystemEventArgs.Name} wath processed.");
                 }
                 catch (Exception ex)
                 {
-                    if (ex.Data["Status"] != null && (string)ex.Data["Status"] == "Processed")
+                    if (ex.Data["Status"] != null && (string) ex.Data["Status"] == "Processed")
                     {
                         File.Copy(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name),
                             Path.Combine(_processedFiles, fileSystemEventArgs.Name), true);
                         File.Delete(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name));
                         Console.WriteLine(ex.Message);
-                        _logger.Error("Eroor occurs with file by path " + fileSystemEventArgs.FullPath + ". " + ex.Message);
+                        _logger.Error("Eroor occurs with file by path " + fileSystemEventArgs.FullPath + ". " +
+                                      ex.Message);
                     }
                     else
                     {
                         Console.WriteLine(ex.Data["info"] + "\n" + ex.Message);
-                        _logger.Error("Eroor occurs with file by path " + fileSystemEventArgs.FullPath + ". " + ex.Message);
-                        File.Copy(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name), Path.Combine(_wrongFilesFolderPath, fileSystemEventArgs.Name), true);
+                        _logger.Error("Eroor occurs with file by path " + fileSystemEventArgs.FullPath + ". " +
+                                      ex.Message);
+                        File.Copy(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name),
+                            Path.Combine(_wrongFilesFolderPath, fileSystemEventArgs.Name), true);
                         File.Delete(Path.Combine(_serverFolderPath, fileSystemEventArgs.Name));
                     }
                 }

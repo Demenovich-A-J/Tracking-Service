@@ -5,6 +5,7 @@ using System.Transactions;
 using BL.Info;
 using BL.Parser.Interfaces;
 using BL.Reader.Interfaces;
+using DAL.DataBaseConfigurator;
 using DAL.ManagerSalesModel;
 using DAL.ReposytoryModel;
 using DAL.ReposytoryModel.Interfaces;
@@ -30,6 +31,7 @@ namespace BL
             _customerRepository = new CustomerRepository();
             _productRepository = new ProductRepository();
             _documentInfoRepository = new DocumentInfoRepository();
+            ConfigDataBase.Config();
         }
 
         public void ProcessFile(string folder, string filename)
@@ -38,7 +40,7 @@ namespace BL
             var manager = IfNotExistAdd(new Manager(title.LastName), _managerRepository);
             var documentInfo = _documentInfoRepository.GetSingle(x => x.DocumentName == filename);
 
-            if (documentInfo.Status == DocumentInfoStatus.Processed.ToString())
+            if (documentInfo != null && documentInfo.Status == DocumentInfoStatus.Processed.ToString())
             {
                 var ex = new Exception($"File {filename} was already proccesed with status {documentInfo.Status}");
                 ex.Data.Add("Status",documentInfo.Status);

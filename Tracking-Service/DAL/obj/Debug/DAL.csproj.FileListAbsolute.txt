@@ -12,3 +12,17 @@ D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.csproj
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.dll
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.pdb
 D:\SourceTreeProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\DAL.dll.config
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\DAL.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\DAL.pdb
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntityFramework.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntytiModel.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntityFramework.xml
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\ru\EntityFramework.resources.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.dll
+E:\GitProjects\Tracking-Service\Tracking-Service\DAL\obj\Debug\DAL.pdb

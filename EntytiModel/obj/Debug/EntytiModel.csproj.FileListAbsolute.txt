@@ -10,3 +10,14 @@ D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.pdb
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.resources.dll
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 D:\SourceTreeProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.csprojResolveAssemblyReference.cache
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntytiModel.dll.config
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntytiModel.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntytiModel.pdb
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntityFramework.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntityFramework.xml
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.resources.dll
+E:\GitProjects\Tracking-Service\EntytiModel\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\GitProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.dll
+E:\GitProjects\Tracking-Service\EntytiModel\obj\Debug\EntytiModel.pdb
